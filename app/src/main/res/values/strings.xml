@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Iconos Redes</string>
+    <string name="twitterIcon">Twitter</string>
+    <string name="instagramIcon">Instagram</string>
+    <string name="facebookIcon">Facebook</string>
+    <string name="AppIcon">Button</string>
+    <string name="ImagenIcon">TODO</string>
+    <string name="petslandT">petsland</string>
+</resources>
