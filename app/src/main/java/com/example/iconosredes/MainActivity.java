@@ -3,10 +3,13 @@ package com.example.iconosredes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.ClipData;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -59,4 +62,37 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    //REALIZACIÓN DE MENU DESPLEGABLE PUNTO 9
+
+    public boolean onCreateOptionsMenu (Menu menu){
+
+        getMenuInflater().inflate(R.menu.overflow, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected (MenuItem item){
+
+        int id = item.getItemId();
+
+        if (id == R.id.Item1){
+
+            startActivity(new Intent(MainActivity.this, Registro.class));
+
+        }else if (id == R.id.Item2){
+
+            startActivity(new Intent(MainActivity.this, Perfil.class));
+
+        }else if (id == R.id.Item3){
+
+            startActivity(new Intent(MainActivity.this, ActualizarDatos.class));
+
+        }else if (id == R.id.Item4){
+
+            startActivity(new Intent(MainActivity.this, Version.class));
+        }
+        return super.onOptionsItemSelected(item);
+
+    }
+
 }

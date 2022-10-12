@@ -6,4 +6,8 @@
     <string name="AppIcon">Button</string>
     <string name="ImagenIcon">TODO</string>
     <string name="petslandT">petsland</string>
+    <string name="item1">Registro</string>
+    <string name="item2">Perfil de mascotas</string>
+    <string name="item3">Actualizar Datos</string>
+    <string name="item4">Versión</string>
 </resources>
